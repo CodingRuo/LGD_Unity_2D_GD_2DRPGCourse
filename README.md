@@ -31,5 +31,3 @@ Dieses Projekt ist nur für Bildungs- und Lernzwecke unter Beachtung der Richtli
 ## Kontakt
 
 Falls Sie Fragen zu diesem Projekt haben oder eine Genehmigung für die Verwendung der Kursmaterialien suchen, wenden Sie sich bitte direkt an [Gianny Dantas](https://www.linkedin.com/in/gianny-dantas).
-
----
