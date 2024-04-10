@@ -2,7 +2,7 @@
 
 ## Über dieses Projekt
 
-Dieses Projekt wurde im Rahmen des Udemy-Kurses "Lerne, wie man ein 2D RPG-Spiel mit Unity erstellt" entwickelt, geleitet von [Name des Kursleiters]. Der Kurs konzentriert sich darauf, die Grundlagen der 2D-Spielentwicklung mit Unity zu erlernen und ein RPG-Spiel zu erstellen.
+Dieses Projekt wurde im Rahmen des Udemy-Kurses "Lerne, wie man ein 2D RPG-Spiel mit Unity erstellt" entwickelt, geleitet von Gianny Dantas. Der Kurs konzentriert sich darauf, die Grundlagen der 2D-Spielentwicklung mit Unity zu erlernen und ein RPG-Spiel zu erstellen.
 
 ![Alternativer Text](CoursePIC.jpg)
 
