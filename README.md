@@ -33,5 +33,3 @@ Dieses Projekt ist nur für Bildungs- und Lernzwecke unter Beachtung der Richtli
 Falls Sie Fragen zu diesem Projekt haben oder eine Genehmigung für die Verwendung der Kursmaterialien suchen, wenden Sie sich bitte direkt an [Gianny Dantas](https://www.linkedin.com/in/gianny-dantas).
 
 ---
-
-Dieses README ist ein Leitfaden für die Nutzung und Verbreitung des Projekts und soll die Achtung und Einhaltung der Rechte der Kursmaterialien gewährleisten. Vielen Dank für Ihr Verständnis und Ihre Kooperation.
