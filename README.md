@@ -1,33 +1,34 @@
-# Learn how to create a 2D RPG game with Unity
+# 2D RPG Unity Game Learning Project
 
-## Über dieses Projekt
-
-Dieses Projekt wurde im Rahmen des Udemy-Kurses "Lerne, wie man ein 2D RPG-Spiel mit Unity erstellt" entwickelt, geleitet von Gianny Dantas. Der Kurs konzentriert sich darauf, die Grundlagen der 2D-Spielentwicklung mit Unity zu erlernen und ein RPG-Spiel zu erstellen.
+Welcome to my learning project repository, based on the Udemy course ["Learn How to Create a 2D RPG Game with Unity"](https://www.udemy.com/course/learn-how-to-create-a-2d-rpg-game-with-unity/) by Gianny Dantas. This project is part of my journey to mastering game development with Unity, focusing on 2D RPG games. Through this course, I aim to understand the core principles of game design, development, and scripting in Unity.
 
 ![Alternativer Text](CoursePIC.jpg)
 
-### Kurslink
+## About the Course
 
-[Lerne, wie man ein 2D RPG-Spiel mit Unity erstellt](https://www.udemy.com/course/learn-how-to-create-a-2d-rpg-game-with-unity/)
+This course provides comprehensive guidance on creating a 2D RPG game using Unity. It covers everything from setting up your game environment to scripting player movements, designing levels, creating NPCs, and implementing game mechanics. The course is designed for learners at all levels who are interested in game development and wish to create their own 2D RPG games.
 
-### Instruktor
+## Purpose of This Repository
 
-Gianny Dantas - ein erfahrener Entwickler und Instruktor für Unity-Spieleentwicklung.
+- **Educational Pursuit:** This repository serves as a documentation of my learning progress and hands-on practice with Unity and game development principles.
+- **Portfolio Creation:** It acts as a showcase of the skills and knowledge I've acquired, demonstrating my ability to design and develop 2D RPG games.
+- **Community Collaboration:** I am open to feedback, suggestions, and collaborations from the game development community to further enhance my learning and project development.
 
-[Youtube-Kanal des Kursleiters](https://www.youtube.com/channel/UCvEAy4KqYvUT7VYDmAObwUA)
+## Disclaimer
 
-## Verwendung von Kursmaterialien
+- **For Learning Only:** The content within this repository is for educational purposes, reflecting my learning experience from Gianny Dantas's Udemy course and additional insights from his [YouTube channel](https://www.youtube.com/channel/UCvEAy4KqYvUT7VYDmAObwUA).
+- **Copyright Notice:** The original course content, including but not limited to video lectures, code snippets, and any other resources, are the intellectual property of Gianny Dantas. This repository contains my personal work derived from learning materials.
+- **Permission for Use:** Please respect the copyright of the course materials. If you wish to use or adapt any content closely related to the course or YouTube videos, ensure you have the proper permissions from Gianny Dantas.
 
-Die in diesem Projekt verwendeten Grafiken und anderen Ressourcen wurden vom Kursleiter Gianny Dantas zur Verfügung gestellt. Diese Materialien sind ausschließlich für Bildungs- und Lernzwecke innerhalb des Kurses gedacht.
+## Contributing
 
-### Kommerzielle Nutzung
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Für die Verwendung dieser Grafiken und Ressourcen zu kommerziellen Zwecken ist eine ausdrückliche Genehmigung des Urhebers, Gianny Dantas, erforderlich. Bitte kontaktieren Sie Gianny Dantas direkt, um eine solche Genehmigung zu erhalten oder weitere Informationen zu den Nutzungsbedingungen zu erfragen.
+## License
 
-## Lizenz
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. Please note that this license does not cover the original course materials or any other copyrighted content.
 
-Dieses Projekt ist nur für Bildungs- und Lernzwecke unter Beachtung der Richtlinien und Bedingungen des Udemy-Kurses und der Anweisungen von Gianny Dantas bestimmt. Jegliche Verbreitung, Reproduktion oder kommerzielle Nutzung der Kursmaterialien ohne vorherige Genehmigung ist strikt untersagt.
+## Acknowledgments
 
-## Kontakt
-
-Falls Sie Fragen zu diesem Projekt haben oder eine Genehmigung für die Verwendung der Kursmaterialien suchen, wenden Sie sich bitte direkt an [Gianny Dantas](https://www.linkedin.com/in/gianny-dantas).
+- A huge thank you to Gianny Dantas for creating such an informative course and sharing valuable knowledge on game development.
+- Gratitude to the Unity and game development communities for their support and resources.
