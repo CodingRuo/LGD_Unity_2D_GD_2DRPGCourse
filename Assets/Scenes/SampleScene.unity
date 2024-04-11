@@ -229,6 +229,8 @@ GameObject:
   - component: {fileID: 1427162156}
   - component: {fileID: 1427162154}
   - component: {fileID: 1427162157}
+  - component: {fileID: 1427162158}
+  - component: {fileID: 1427162159}
   m_Layer: 0
   m_Name: Player_Ninja
   m_TagString: Untagged
@@ -315,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cbb0a29b5061b44b857d815e1886993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  _speed: 0
 --- !u!50 &1427162155
 Rigidbody2D:
   serializedVersion: 4
@@ -376,7 +378,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e45ad4deb59b04eaf2f4c8adb36249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerStats: {fileID: 11400000, guid: d4bdba69550a5254f9ee0e3ce4f7b4d3, type: 2}
+  _stats: {fileID: 11400000, guid: d4bdba69550a5254f9ee0e3ce4f7b4d3, type: 2}
+--- !u!114 &1427162158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427162151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037753f2c30ed5e4d99e619b44441314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1427162159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427162151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57642da391c4e0747980aed486ab24e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats: {fileID: 11400000, guid: d4bdba69550a5254f9ee0e3ce4f7b4d3, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

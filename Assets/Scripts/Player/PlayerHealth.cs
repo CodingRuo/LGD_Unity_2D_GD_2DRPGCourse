@@ -3,7 +3,13 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour, IDamageable {
 
     [Header("Config")]
-    [SerializeField] private PlayerStats _playerStats;
+    [SerializeField] private PlayerStats _stats;
+
+    private PlayerAnimations _playerAnimations;
+
+    private void Awake() {
+        _playerAnimations = GetComponent<PlayerAnimations>();
+    }
 
     private void Update() {
         if ( Input.GetKeyDown( KeyCode.P ) ) {
@@ -13,13 +19,13 @@ public class PlayerHealth : MonoBehaviour, IDamageable {
 
     public void TakeDamage( float amount ) {
 
-        _playerStats.Health -= amount;
-        if ( _playerStats.Health <= 0f ) {
+        _stats.Health -= amount;
+        if ( _stats.Health <= 0f ) {
             PlayerDead();
         }
     }
 
     private void PlayerDead() {
-        Debug.Log("DEAD");
+        _playerAnimations.SetDeadAnimation();
     }
 }

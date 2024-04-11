@@ -3,21 +3,20 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     
     [Header("Config")]
-    [SerializeField] private float speed;
+    [SerializeField] private float _speed;
 
-    private readonly int moveX    = Animator.StringToHash( "MoveX" );
-    private readonly int moveY    = Animator.StringToHash( "MoveY" );
-    private readonly int isMoving = Animator.StringToHash( "isMoving" );
-
-    private PlayerActions   actions;
-    private Rigidbody2D     rb2D;
-    private Animator        animator;
-    private Vector2         moveDirection;
+    private PlayerAnimations    _playerAnimations;
+    private PlayerActions       _actions;
+    private Rigidbody2D         _rb2D;
+    private Player              _player;
+    
+    private Vector2             _moveDirection;
 
     private void Awake() {
-        actions  = new PlayerActions();
-        animator = GetComponent<Animator>();
-        rb2D     = GetComponent<Rigidbody2D>();
+        _actions          = new PlayerActions();
+        _playerAnimations = GetComponent<PlayerAnimations>();
+        _rb2D             = GetComponent<Rigidbody2D>();
+        _player           = GetComponent<Player>();
     }
 
     void Update() {
@@ -29,30 +28,30 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void Move() {
-        rb2D.MovePosition( rb2D.position + moveDirection * ( speed * Time.fixedDeltaTime ) );
+        if ( _player.Stats.Health <= 0 ) return;
+        _rb2D.MovePosition( _rb2D.position + _moveDirection * ( _speed * Time.fixedDeltaTime ) );
     }
 
     private void ReadMovement() {
 
-        moveDirection = actions.Movement.Move.ReadValue<Vector2>().normalized;
+        _moveDirection = _actions.Movement.Move.ReadValue<Vector2>().normalized;
 
-        if ( moveDirection == Vector2.zero ) {
-            animator.SetBool( isMoving, false );
+        if ( _moveDirection == Vector2.zero ) {
+            _playerAnimations.SetMoveBoolTransition( false );
             return;
         }
 
-        animator.SetBool( isMoving, true );
+        _playerAnimations.SetMoveBoolTransition( true );
 
-        animator.SetFloat( moveX, moveDirection.x );
-        animator.SetFloat( moveY, moveDirection.y );
+        _playerAnimations.SetMoveAnimation( _moveDirection );
 
     }
 
     private void OnEnable() {
-        actions.Enable();
+        _actions.Enable();
     }
 
     private void OnDisable() {
-        actions.Disable();
+        _actions.Disable();
     }
 }
