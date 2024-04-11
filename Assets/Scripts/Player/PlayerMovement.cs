@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
-{
+public class PlayerMovement : MonoBehaviour {
+    
     [Header("Config")]
     [SerializeField] private float speed;
 
-    private readonly int moveX = Animator.StringToHash( "MoveX" );
-    private readonly int moveY = Animator.StringToHash( "MoveY" );
+    private readonly int moveX    = Animator.StringToHash( "MoveX" );
+    private readonly int moveY    = Animator.StringToHash( "MoveY" );
+    private readonly int isMoving = Animator.StringToHash( "isMoving" );
 
     private PlayerActions   actions;
     private Rigidbody2D     rb2D;
@@ -35,7 +36,12 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection = actions.Movement.Move.ReadValue<Vector2>().normalized;
 
-        if ( moveDirection == Vector2.zero ) return;
+        if ( moveDirection == Vector2.zero ) {
+            animator.SetBool( isMoving, false );
+            return;
+        }
+
+        animator.SetBool( isMoving, true );
 
         animator.SetFloat( moveX, moveDirection.x );
         animator.SetFloat( moveY, moveDirection.y );
