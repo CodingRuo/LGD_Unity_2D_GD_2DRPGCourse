@@ -2,7 +2,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
     
-    [SerializeField] private PlayerStats _stats;
+    [SerializeField] private PlayerStats stats;
 
-    public PlayerStats Stats => _stats;
+    public PlayerStats Stats => stats;
+
+    private PlayerAnimations _animations;
+
+    private void Awake() {
+        _animations = GetComponent<PlayerAnimations>();
+    }
+
+    public void ResetPlayer() {
+        stats.ResetPlayer();
+        _animations.ResetPlayer();
+    }
 }
